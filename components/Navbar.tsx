@@ -7,23 +7,17 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 
+const links = [{ displayName: "Blog", herf: "/blog" }];
+
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
   const [mounted, setMounted] = useState(false);
-  
-  const { resolvedTheme, setTheme } = useTheme();
   const pathname = usePathname();
+  const { theme, setTheme } = useTheme();
 
-  const toggleTheme = () =>{
-    setTheme(resolvedTheme === 'light' ? 'dark' : 'light');
-  }
-  
-
-  // Step 1: Prevent Hydration Mismatch
-  // This ensures the theme toggle only renders once the client-side JS is ready
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
 
   const navLinks = [
     { name: 'HOME', href: '/' },
@@ -63,22 +57,20 @@ const Navbar = () => {
             </Link>
           ))}
 
-          {/* Theme Toggle Button - Only shows after mount */}
-          {mounted && (
-            <button 
-              className='focus:outline-none ml-2' 
-              aria-label='Toggle theme'
-              onClick={() => setTheme(resolvedTheme === "light" ? "dark" : "light")}
-            >
-              <Image 
-                src={resolvedTheme === "dark" ? "/dark-toggle.svg" : "/light-toggle.svg"} 
-                alt="theme toggle"
-                width={48}
-                height={28} 
-              />
-            </button>
-          )}
         </ul>
+        <button
+          onClick={toggleTheme}
+          className="focus:outline-none"
+          aria-label="Toggle theme"
+        >
+          <Image
+            src={theme === "light" ? "/light-toggle.svg" : "/dark-toggle.svg"}
+            alt="theme toggle"
+            width={48}
+            height={28}
+            priority
+          />
+        </button>
       </div>
 
       {/* Mobile Menu Toggle Button */}
@@ -122,17 +114,6 @@ const Navbar = () => {
             </Link>
           ))}
           
-          {/* Mobile Theme Toggle */}
-          {mounted && (
-            <li className="py-6">
-              <button 
-                onClick={toggleTheme}
-                className="flex items-center gap-2"
-              >
-                {resolvedTheme === "dark" ? "Switch to Light" : "Switch to Dark"}
-              </button>
-            </li>
-          )}
         </ul>
       </div>
 

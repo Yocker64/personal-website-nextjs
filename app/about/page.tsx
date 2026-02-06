@@ -1,11 +1,15 @@
 import React from 'react'
 import Title from '../../components/Title'
 import NewsletterBox from '../../components/NewsletterBox'
+import Navbar from '../../components/Navbar'
+import Footer from '../../components/Footer'
 // Import your own assets here later
 // import { assets } from '../assets/assets' 
 
 const About = () => {
     return (
+        <>
+        <Navbar/>
         <div className='text-gray-900 dark:text-gray-100'>
             <div className='text-2xl text-center pt-8 border-t border-gray-200 dark:border-gray-800'>
                 <Title text1={'ABOUT'} text2={'ME'} />
@@ -58,6 +62,8 @@ const About = () => {
 
             <NewsletterBox/>
         </div>
+        <Footer/>
+        </>
     )
 }
 

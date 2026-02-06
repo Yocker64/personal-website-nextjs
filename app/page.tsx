@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       <Navbar/>
       {/* Hero section */}
-      <div className='flex items-center justify-evenly'>
+      <div className='flex items-center justify-around my-10'>
         <div className=''>
         <h1 className='text-6xl'>Hello there!</h1>
         <h2 className='text-5xl'>Mario here.</h2>
@@ -15,7 +15,7 @@ export default function Home() {
         <h3 className='text-2xl'>Data scientist & opensource enthusiast</h3>
         <br />
         <h3 className='text-2xl'> I'm glad your visiting my piece of the internet</h3>
-        <h3 className='text-2xl'>You may be interested in checking my</h3>
+        <h3 className='text-2xl'>You may be interested in checking my...</h3>
         <br />
         <div className='flex items-center justify-evenly p-10'>
          
@@ -31,8 +31,8 @@ export default function Home() {
         <div>
           <Image src="/images/hero.jpeg"
               alt="theme toggle"
-              width={380}
-              height={480}
+              width={480}
+              height={600}
               priority/>
         </div>
       </div>

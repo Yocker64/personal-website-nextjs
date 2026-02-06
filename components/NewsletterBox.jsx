@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 
 const NewsletterBox = () => {
@@ -8,7 +9,7 @@ const NewsletterBox = () => {
 
     return (
         <div className='text-center pb-20'>
-            <p className='text-2xl font-medium text-gray-800'>Suscribete ahora y obten hasta 20% de descuento</p>
+            <p className='text-2xl font-medium text-gray-800'>Enroll for my NewsLetter to never miss any update of my current projects</p>
             <p className='text-gray-400 mt-3'>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </p>

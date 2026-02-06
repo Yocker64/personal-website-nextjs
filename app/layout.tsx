@@ -20,7 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${work_Sans.className} bg-white dark:bg-[#242535] text-black dark:text-white mx-auto`}
+        className={`${work_Sans.className} 
+  min-h-screen mx-auto
+  bg-white text-black 
+  dark:bg-[#242535] dark:bg-gradient-to-br dark:from-[#242535] dark:to-[#13141C] dark:text-white
+  
+ `}
       >
         <ThemeProvider attribute={"class"} defaultTheme="system" enableSystem disableTransitionOnChange>{children}</ThemeProvider>
         

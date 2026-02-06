@@ -33,6 +33,8 @@ export default function Home() {
               alt="theme toggle"
               width={480}
               height={600}
+  className="rounded-xl border-2 border-gray-300 dark:border-gray-700 shadow-lg"
+
               priority/>
         </div>
       </div>

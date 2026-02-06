@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from "next/image";
 import Title from '../../components/Title'
 import NewsletterBox from '../../components/NewsletterBox'
 import Navbar from '../../components/Navbar'
@@ -10,15 +11,22 @@ const About = () => {
     return (
         <>
         <Navbar/>
-        <div className='text-gray-900 dark:text-gray-100'>
+        <div className='text-gray-900 dark:text-gray-100 px-40 py-10'>
             <div className='text-2xl text-center pt-8 border-t border-gray-200 dark:border-gray-800'>
                 <Title text1={'ABOUT'} text2={'ME'} />
             </div>
 
-            <div className='my-10 flex flex-col md:flex-row gap-16'>
+            <div className='my-10 flex flex-col md:flex-row gap-16 pb-10'>
                 {/* Placeholder for your profile picture */}
                 <div className='w-full md:max-w-[450px] bg-gray-200 dark:bg-[#242535] rounded-xl h-[450px] flex items-center justify-center border border-gray-800'>
-                    <span className="text-gray-500">Profile Image</span>
+                <Image 
+  src="/images/kinkakuji.jpg"
+  alt="profile picture"
+  width={480}
+  height={600}
+  priority
+  className="rounded-xl border-2 border-gray-300 dark:border-gray-700 shadow-lg"
+/>
                 </div>
                 
                 <div className='flex flex-col justify-center gap-6 md:w-2/4 text-gray-600 dark:text-gray-400'>
@@ -40,6 +48,7 @@ const About = () => {
                     </p>
                 </div>
             </div>
+            <br />
 
             <div className='text-xl py-4'>
                 <Title text1={'WHY'} text2={'FOLLOW ME'}/>

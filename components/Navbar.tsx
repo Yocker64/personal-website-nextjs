@@ -7,11 +7,9 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 
-const links = [{ displayName: "Blog", herf: "/blog" }];
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
-  const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
   const { theme, setTheme } = useTheme();
 

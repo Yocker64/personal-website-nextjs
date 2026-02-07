@@ -4,8 +4,7 @@ import Title from '../../components/Title'
 import NewsletterBox from '../../components/NewsletterBox'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
-// Import your own assets here later
-// import { assets } from '../assets/assets' 
+
 
 const About = () => {
     return (

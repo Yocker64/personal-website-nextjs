@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='text-gray-900 dark:text-gray-100'>
+    <div className='text-gray-900 dark:text-gray-100 px-40'>
         <div className='flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 my-10 mt-40 text-sm '>
             <div>
                 <p className='text-2xl font-bold'>Yocker64</p>

@@ -1,46 +1,15 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import Image from "next/image";
-import Link from "next/link";
+import ContentGrid from "@/components/ContentGrid";
+import { projects } from "@/projects";
 
-export default function page() {
+export default function BlogPage() {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <Navbar />
-      <div className="grid grid-cols-1 md:grid-cols-3 place-items-center gap-5 mt-10">
-          <Link
-            key={1}
-            href={`/projects/chalinked`}
-            className="p-4 group rounded-lg border w-[392px] border-gray-200 dark:border-gray-700"
-          >
-            {/* image */}
-            <div className="h-60 w-full relative overflow-hidden rounded-md object-cover group-hover:scale-105 duration-300 transition-all">
-              <Image
-                src='/images/linked-map.png'
-                alt='Linked - thumbnail'
-                sizes="100vh"
-                fill
-              />
-            </div>
-
-            {/* category */}
-            <p className="text-sm bg-gray-100 dark:bg-gray-700/95 text-blue-700 dark:text-blue-500 font-semibold my-4 w-fit px-2 py-1 rounded-sm">
-              Bikes, Map, Navigation
-            </p>
-
-            {/* title */}
-            <h2 className="text-2xl leading-7 font-bold py-1 line-clamp-2">
-              ChaLinked
-            </h2>
-
-            {/* author and date */}
-            <div className="text-gray-500 flex text-base space-x-10 py-3">
-              <div>Sandoval Mario <br />Davaa Bat-Iredui <br />Matusevich Ivan</div>
-              <div>January, 2026</div>
-            </div>
-          </Link>
-      
-      </div>
+      <main className="flex-grow px-6 py-10 md:px-10">
+        <ContentGrid items={projects} basePath="projects" />
+      </main>
       <Footer />
     </div>
   );

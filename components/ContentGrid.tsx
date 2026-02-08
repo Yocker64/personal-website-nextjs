@@ -18,7 +18,7 @@ interface ContentGridProps {
 
 export default function ContentGrid({ items, basePath }: ContentGridProps) {
   return (
-    <div className="grid grid-cols-[repeat(auto-fill,minmax(320px,1fr))] gap-8 justify-center">
+    <div className="grid grid-cols-[repeat(auto-fill,minmax(400px,1fr))] gap-8 justify-center">
       {items.map((item, idx) => (
         <Link
           key={idx}

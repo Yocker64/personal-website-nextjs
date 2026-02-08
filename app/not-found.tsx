@@ -29,12 +29,12 @@ export default function NotFound() {
           
           <div className="mt-[-60px] md:mt-[-100px]">
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-8 tracking-tighter">
-              Absolute Zero.
+              Lost in the Multiverse
             </h2>
             
             <div className="space-y-4">
                 <p className="text-xl md:text-2xl text-blue-300 font-medium">
-                  Page not found in this timeline.
+                  Page not found in this Universe
                 </p>
                 <p className="text-lg md:text-xl text-gray-400 italic max-w-xl mx-auto leading-relaxed">
                   Somewhere in a parallel universe, your alternative self actually found what they were looking for. 
@@ -48,13 +48,13 @@ export default function NotFound() {
               href="/"
               className="rounded-full bg-white text-black px-10 py-4 text-sm font-bold hover:bg-blue-400 hover:text-white transition-all transform hover:scale-110 active:scale-95 shadow-[0_0_20px_rgba(255,255,255,0.3)]"
             >
-              Back to Reality
+              Back to C-137
             </Link>
             <Link
               href="/projects"
               className="rounded-full border border-white/20 bg-white/5 text-white backdrop-blur-xl px-10 py-4 text-sm font-bold hover:bg-white/10 transition-all border-dashed"
             >
-              Browse Multiverse Projects
+              Browse Projects
             </Link>
           </div>
         </div>

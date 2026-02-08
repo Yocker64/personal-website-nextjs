@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import Link from "next/link";
+import SocialLinks from "@/components/SocialLinks";
 
 export default function Home() {
   return (
@@ -62,6 +63,7 @@ export default function Home() {
 
         </div>
       </main>
+      <SocialLinks/>
 
       <Footer/>
     </div>

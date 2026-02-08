@@ -10,7 +10,7 @@ const About = () => {
     return (
         <>
         <Navbar/>
-        <div className='text-gray-900 dark:text-gray-100 px-40 py-10'>
+        <div className='text-gray-900 dark:text-gray-100 px-10 lg:px-40 py-10'>
             <div className='text-2xl text-center pt-8 border-t border-gray-200 dark:border-gray-800'>
                 <Title text1={'ABOUT'} text2={'ME'} />
             </div>

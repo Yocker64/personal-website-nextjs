@@ -58,7 +58,7 @@ export default function Home() {
           <div className="order-1 lg:order-2 flex justify-center">
             <div className="relative w-full max-w-[480px] aspect-[4/5]">
               <Image 
-                src="/images/hero.jpeg"
+                src="/images/hero.webp"
                 alt="Mario - Hero Image"
                 fill
                 className="rounded-xl border-2 border-gray-300 dark:border-gray-700 shadow-2xl object-cover"

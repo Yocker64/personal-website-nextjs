@@ -19,7 +19,7 @@ const About = () => {
                 {/* Placeholder for your profile picture */}
                 <div className='w-full md:max-w-[450px] bg-gray-200 dark:bg-[#242535] rounded-xl h-[450px] flex items-center justify-center border border-gray-800'>
                 <Image 
-  src="/images/kinkakuji.jpg"
+  src="/images/kinkakuji.webp"
   alt="profile picture"
   width={480}
   height={600}

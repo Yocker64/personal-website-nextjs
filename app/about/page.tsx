@@ -36,7 +36,7 @@ const About = () => {
                     </p>
                     <p>
                         Currently based in Japan, I spend my time exploring the intersections of software 
-                        engineering principles and statistical modeling. When I'm not terminal-hopping in 
+                        engineering principles and statistical modeling. {"When I'm not terminal-hopping in"} 
                         Arch Linux, you can find me cycling or enjoying Latin dances like Salsa and Bachata.
                     </p>
                     <b className='text-gray-800 dark:text-gray-200'>My Mission</b>
@@ -56,7 +56,7 @@ const About = () => {
             <div className='flex flex-col md:flex-row text-sm mb-20'>
                 <div className='border dark:border-gray-800 px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5'>
                     <b className="text-gray-800 dark:text-gray-100">Technical Depth:</b>
-                    <p>I share insights from my "kenshuu" training and real-world data science projects, focusing on practical application over theory.</p>
+                    <p>I share insights from my training and real-world data science projects, focusing on practical application over theory.</p>
                 </div>
                 <div className='border dark:border-gray-800 px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5'>
                     <b className="text-gray-800 dark:text-gray-100">Open Source Mindset:</b>

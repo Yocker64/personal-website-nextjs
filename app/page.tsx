@@ -33,7 +33,7 @@ export default function Home() {
                 Data scientist & opensource enthusiast
               </h3>
               <h3 className="text-xl md:text-2xl text-gray-600 dark:text-gray-400">
-                I'm glad you're visiting my piece of the internet
+              I&apos;m glad you&apos;re here
               </h3>
               <h3 className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 font-medium">
                 You may be interested in checking my...
@@ -72,7 +72,7 @@ export default function Home() {
       <SocialLinks/>
 
       <section className="flex-grow px-6 py-10 md:px-10">
-              <SectionTitle text="Projects I've worked on"/>
+              <SectionTitle text="Projects I've worked on..."/>
               <ContentGrid items={projects} basePath="projects" />
             </section>
       <InfiniteCarousel items={posts} basePath="blog " title="My thoughts about..."/>

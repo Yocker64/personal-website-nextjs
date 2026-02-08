@@ -15,6 +15,7 @@ interface CarouselItem {
 interface CarouselProps {
   items: CarouselItem[];
   basePath: string;
+  title: string;
 }
 
 const InfiniteCarousel = ({ items, basePath, title }: CarouselProps) => {

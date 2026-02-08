@@ -78,7 +78,7 @@ const Footer = () => {
                             >
                                 {/* Rendering a smaller version of the icon for the footer list */}
                                 <span className="text-gray-400 group-hover:text-current transition-colors">
-                                    {React.cloneElement(social.icon as React.ReactElement, { size: 16 })}
+                                    {React.cloneElement(social.icon as React.ReactElement)}
                                 </span>
                                 {social.name}
                             </a>

@@ -3,6 +3,8 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import Link from "next/link";
 import SocialLinks from "@/components/SocialLinks";
+import InfiniteCarousel from "@/components/InfiniteCarousel";
+import { posts} from "@/posts";
 
 export default function Home() {
   return (
@@ -64,7 +66,7 @@ export default function Home() {
         </div>
       </main>
       <SocialLinks/>
-
+      <InfiniteCarousel items={posts} basePath="blog " />
       <Footer/>
     </div>
   );

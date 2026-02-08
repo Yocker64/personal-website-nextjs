@@ -13,6 +13,15 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: {
+        'infinite-scroll': 'infinite-scroll 120s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-50%)' },
+        }
+      }
     },
   },
   plugins: [require("@tailwindcss/typography")],

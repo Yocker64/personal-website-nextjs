@@ -8,7 +8,7 @@ export default function page() {
   return (
     <div>
       <Navbar />
-      <div className="grid grid-cols-1 md:grid-cols-3 place-items-center gap-5 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 place-items-center gap-5">
         {posts.map((p, idx) => (
           <Link
             key={idx}

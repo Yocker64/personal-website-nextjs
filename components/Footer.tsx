@@ -1,6 +1,17 @@
 import React from 'react'
+import Link from 'next/link';
 
 function Footer() {
+
+    const navLinks = [
+        { name: 'HOME', href: '/' },
+        { name: 'BLOG', href: '/blog' },
+        { name: 'PROJECTS', href: '/projects' },
+        { name: 'BOOK REVIEWS', href: '/books' },
+        { name: 'ABOUT', href: '/about' },
+      ];
+
+      
   return (
     <div className='text-gray-900 dark:text-gray-100 px-40'>
         <div className='flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 my-10 mt-40 text-sm '>
@@ -11,10 +22,14 @@ function Footer() {
             <div>
                 <p className='text-xl font-medium mb-5'>Yocker64</p>
                 <ul className='flex flex-col gap-1 text-gray-600 dark:text-gray-300'>
-                    <li>Home</li>
-                    <li>About me</li>
-                    <li>Blog</li>
-                    <li>Book summaries</li>
+                {navLinks.map((link) => (
+            <Link 
+              key={link.href} 
+              href={link.href}
+            >
+              {link.name}
+            </Link>
+          ))}
                 </ul>
             </div>
             <div>

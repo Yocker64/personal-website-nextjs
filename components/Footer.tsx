@@ -40,7 +40,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="border-t border-gray-200 dark:border-gray-800 duration-300">
+    <footer className="border-t border-gray-200 dark:border-gray-800 duration-300 mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Adjusted grid to 4 columns on large screens: Brand (2fr) | Social | Nav | Contact */}
@@ -59,7 +59,7 @@ const Footer = () => {
                         Open Source enthusiast and Data Scientist bridging the gap between complex data and user-friendly web experiences.
                     </p>
                     <p>
-                        Currently based in Kyoto, Japan 🇯🇵. Exploring technology, culture, and the perfect cup of coffee.
+                        Currently based in Kyoto, Japan. Exploring technology, culture, and the perfect cup of coffee.
                     </p>
                 </div>
             </div>

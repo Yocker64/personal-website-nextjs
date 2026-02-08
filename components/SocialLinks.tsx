@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 import { Github, Linkedin, Music, Youtube, Binoculars, Mail, Check } from "lucide-react";
+import SectionTitle from "@/components/SectionTitle";
+
 
 const SocialLinks = () => {
   const [copied, setCopied] = useState(false);
@@ -57,10 +59,8 @@ const SocialLinks = () => {
   ];
 
   return (
-    <section className="px-6 py-12 flex flex-col items-center border-t border-gray-100 dark:border-gray-800">
-      <p className="text-xs font-bold text-gray-400 uppercase tracking-[0.2em] mb-12">
-        Social & Networking
-      </p>
+    <section className="px-6 py-20 flex flex-col items-center border-t border-gray-100 dark:border-gray-800">
+      <SectionTitle text={'Social & Networking'}/>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-10 w-full max-w-7xl">
         {socialData.map((social) => (

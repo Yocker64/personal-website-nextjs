@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import SectionTitle from "@/components/SectionTitle";
 
 interface CarouselItem {
   slug: string;
@@ -16,12 +17,15 @@ interface CarouselProps {
   basePath: string;
 }
 
-const InfiniteCarousel = ({ items, basePath }: CarouselProps) => {
+const InfiniteCarousel = ({ items, basePath, title }: CarouselProps) => {
   // Double the array to create the seamless infinite loop effect
   const doubledItems = [...items, ...items];
 
   return (
+
     <div className="w-full py-12 overflow-hidden bg-white dark:bg-transparent">
+      <SectionTitle text={title}/>
+
       {/* Container with gradient mask for "fade" effect on edges */}
       <div className="relative flex max-w-[100vw] overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]">
         

@@ -5,6 +5,10 @@ import Link from "next/link";
 import SocialLinks from "@/components/SocialLinks";
 import InfiniteCarousel from "@/components/InfiniteCarousel";
 import { posts} from "@/posts";
+import { books} from "@/books";
+import ContentGrid from "@/components/ContentGrid";
+import { projects } from "@/projects";
+import SectionTitle from "@/components/SectionTitle";
 
 export default function Home() {
   return (
@@ -66,7 +70,13 @@ export default function Home() {
         </div>
       </main>
       <SocialLinks/>
-      <InfiniteCarousel items={posts} basePath="blog " />
+
+      <section className="flex-grow px-6 py-10 md:px-10">
+              <SectionTitle text="Projects I've worked on"/>
+              <ContentGrid items={projects} basePath="projects" />
+            </section>
+      <InfiniteCarousel items={posts} basePath="blog " title="My thoughts about..."/>
+      <InfiniteCarousel items={books} basePath="books " title="Books I've read..."/>
       <Footer/>
     </div>
   );

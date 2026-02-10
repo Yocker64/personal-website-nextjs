@@ -26,7 +26,7 @@ const SocialLinks = () => {
     },
     { 
       name: "LinkedIn", 
-      href: "https://linkedin.com/in/your-profile", 
+      href: "https://www.linkedin.com/in/mario-sandoval-yoc/", 
       icon: <Linkedin size={50} strokeWidth={2} />, 
       hoverColor: "group-hover:text-[#0077b5]",
       username: 'Mario David',

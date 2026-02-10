@@ -1,0 +1,81 @@
+.main-container {
+    margin: 100px 20vw;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 50px;
+}
+
+.main-container h1 {
+    text-align: center;
+    color: var(--yellow);
+}
+
+.about-container {
+    background-color: var(--dark-gray);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+}
+
+.about-container p {
+    text-align: left;
+}
+
+@media (max-width: 599px) {
+    .main-container {
+        margin: 50px 20px;
+    }
+    .about-container {
+        padding: 30px;
+    }
+}
+
+.main-container .developers-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 20px; 
+}
+
+.developer-card {
+    background-color: black;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    display: grid;
+    grid-template-rows: 300px auto;
+    transition: 300ms;
+}
+
+.developer-card h2 {
+    color: var(--yellow);
+}
+
+.developer-image {
+    border-radius: 30px 30px 0 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.developer-image.mario {
+    background-image: url(../img/about/mario.jpg);
+}
+.developer-image.ivan {
+    background-image: url(../img/about/ivan.jpg);
+}
+.developer-image.batto {
+    background-image: url(../img/about/batto.jpg);
+}
+
+.developer-card:hover {
+    transition: 300ms;
+    transform: scale(1.05);
+}
+
+.developer-info {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}

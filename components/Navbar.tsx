@@ -28,7 +28,7 @@ const Navbar = () => {
   const isActive = (path: string) => pathname === path;
 
   return (
-    <nav className='sticky top-0 left-0 right-0 z-50 flex items-center justify-between py-5 font-medium bg-white dark:bg-[#242535] px-4 sm:px-10 md:px-15 lg:px-40 transition-colors duration-300'>
+    <nav className='sticky top-0 left-0 right-0 z-50 flex items-center justify-between py-5 font-medium bg-white dark:bg-[#000009] px-4 sm:px-10 md:px-15 lg:px-40 transition-colors duration-300'>
       
       {/* Logo / Brand */}
       <Link href="/">

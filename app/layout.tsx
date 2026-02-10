@@ -24,7 +24,7 @@ export default function RootLayout({
         className={`${work_Sans.className} 
   min-h-screen mx-auto
   bg-white text-black 
-  dark:bg-[#242535] dark:bg-gradient-to-br dark:from-[#242535] dark:to-[#10101C] dark:text-white
+  dark:bg-[#242535] dark:bg-gradient-to-br dark:from-[#141525] dark:to-[#00000C] dark:text-white
   
  `}
       >

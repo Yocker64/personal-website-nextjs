@@ -12,10 +12,10 @@ export interface IPost {
     {
       title: "Chalinked",
       slug: "chalinked",
-      author: "Mario Sandoval,                   Ivan Matusevich, Bat-Iredui Davaa",
+      author: "Mario Sandoval, Ivan Matusevich, Bat-Iredui Davaa",
       date: "2024-04-05",
-      category: "Performance",
-      thumbnail: "/images/thumbnails/nextjs-optimizing.jpg",
+      category: "Navigation, Maps, Bicycles",
+      thumbnail: "/images/thumbnails/chalinked.png",
     },
     {
       title: "Optimizing Next.js Applications for Maximum Performance",

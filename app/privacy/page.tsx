@@ -10,7 +10,7 @@ const PrivacyPolicy = () => {
   const contactEmail = "mdyoc74@gmail.com";
 
   return (
-    <div className="sm:px-6 lg:px-8 font-sans bg-white text-black dark:bg-[#242535] dark:bg-gradient-to-br dark:from-[#242535] dark:to-[#10101C] dark:text-white">
+    <div className="sm:px-6 lg:px-8 font-sans bg-white text-black dark:bg-[#242535] dark:bg-gradient-to-br dark:from-[#040515] dark:to-[#00000C] dark:text-white">
       <Navbar />
       
       <div className="max-w-5xl mx-auto shadow-lg rounded-xl overflow-hidden p-8 sm:p-12 mt-6 mb-6 bg-white border border-gray-100 dark:bg-[#242535] dark:border-gray-700">

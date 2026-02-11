@@ -7,10 +7,9 @@ export default function NotFound() {
     <div className="flex flex-col min-h-screen bg-black">
       <Navbar />
       
-      {/* Increased height and scale for a more "massive" feel */}
       <main className="relative flex-grow flex flex-col items-center justify-center px-6 min-h-[80vh] overflow-hidden">
         
-        {/* Background with a subtle zoom/parallax feel */}
+        {/* Background with a subtle zoom feel */}
         <div 
           className="absolute inset-0 z-0 bg-cover bg-fixed bg-center bg-no-repeat scale-110"
           style={{ 

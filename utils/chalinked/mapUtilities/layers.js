@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
-import defaultViewImg from '../../img/map-ui/default-view.png';
-import satelliteViewImg from '../../img/map-ui/satellite-view.jpeg';
+import defaultViewImg from '../../public/chalinked/img/map-ui/default-view.png';
+import satelliteViewImg from '../../public/chalinked/img/map-ui/satellite-view.jpeg';
 
 export function addLayers(MAP) {
   const normalLayer = L.tileLayer(

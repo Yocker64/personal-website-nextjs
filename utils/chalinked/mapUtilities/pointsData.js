@@ -1,11 +1,11 @@
-import park from '../../img/park.png';
-import shuuri from '../../img/shuuri.png';
-import konbini from '../../img/konb.png';
-import eleven from '../../img/7eleven.png';
-import family from '../../img/familymart.png';
-import yamazaki from '../../img/yamazaki.jpg';
-import ministop from '../../img/ministop.png';
-import lawson from '../../img/lawson.png';
+import park from '../../public/chalinked/img/park.png';
+import shuuri from '../../public/chalinked/img/shuuri.png';
+import konbini from '../../public/chalinked/img/konb.png';
+import eleven from '../../public/chalinked/img/7eleven.png';
+import family from '../../public/chalinked/img/familymart.png';
+import yamazaki from '../../public/chalinked/img/yamazaki.jpg';
+import ministop from '../../public/chalinked/img/ministop.png';
+import lawson from '../../public/chalinked/img/lawson.png';
 
 export const imagesDescsLinks = {
   parking: [

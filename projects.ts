@@ -10,9 +10,9 @@ export interface IPost {
   export const projects: IPost[] = [
 
     {
-      title: "Optimizing Next.js Applications for Maximum Performance",
+      title: "Chalinked",
       slug: "chalinked",
-      author: "David Kim",
+      author: "Mario Sandoval,                   Ivan Matusevich, Bat-Iredui Davaa",
       date: "2024-04-05",
       category: "Performance",
       thumbnail: "/images/thumbnails/nextjs-optimizing.jpg",

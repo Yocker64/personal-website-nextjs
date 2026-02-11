@@ -3,7 +3,7 @@
 import 'leaflet-routing-machine';
 import { playAudioDirection } from './audioInstructions';
 
-import icon from '../../img/map-ui/user-marker.png';
+import icon from '../../public/chalinked/img/map-ui/user-marker.png';
 
 let routeInterval = null;
 let lastLat = null;

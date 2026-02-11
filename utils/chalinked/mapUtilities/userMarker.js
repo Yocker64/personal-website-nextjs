@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 /* eslint-disable new-cap */
 /* eslint-disable no-unused-vars */
-import icon from '../../img/map-ui/user-marker.png';
+import icon from '../../public/chalinked/img/map-ui/user-marker.png';
 import { addRoutingBtn } from './routingButton';
 
 export function addUserMarker(map) {

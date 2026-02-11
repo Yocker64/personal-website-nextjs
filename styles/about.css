@@ -58,13 +58,13 @@
 }
 
 .developer-image.mario {
-    background-image: url(../img/about/mario.jpg);
+    background-image: url(../public/chalinked/img/about/mario.jpg);
 }
 .developer-image.ivan {
-    background-image: url(../img/about/ivan.jpg);
+    background-image: url(../public/chalinked/img/about/ivan.jpg);
 }
 .developer-image.batto {
-    background-image: url(../img/about/batto.jpg);
+    background-image: url(../public/chalinked/img/about/batto.jpg);
 }
 
 .developer-card:hover {

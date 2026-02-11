@@ -4,9 +4,9 @@ import 'leaflet.markercluster';
 import { imagesDescsLinks, DataAccess } from './pointsData';
 import { addRoutingBtn } from './routingButton';
 
-import konbiniIcon from '../../img/icons/shopping-bag.png';
-import repairIcon from '../../img/icons/wrench.png';
-import parkIcon from '../../img/icons/park.png';
+import konbiniIcon from '../../public/chalinked/img/icons/shopping-bag.png';
+import repairIcon from '../../public/chalinked/img/icons/wrench.png';
+import parkIcon from '../../public/chalinked/img/icons/park.png';
 
 export function addMarkers(map) {
   // Marker clusters declarations
@@ -94,11 +94,11 @@ export function addMarkers(map) {
 
   // Marker control declarations
   const markerControlIcon = document.querySelector('.marker-control-toggle');
-  markerControlIcon.addEventListener('click', () => {
-    const controlDiv = document.querySelector('.marker-control');
-    controlDiv.classList.contains('hidden')
-      ? controlDiv.classList.remove('hidden')
-      : controlDiv.classList.add('hidden');
+  markerControlIcon.addEventListener("click", () => {
+    const controlDiv = document.querySelector(".marker-control");
+    if (controlDiv) {
+      controlDiv.classList.toggle("hidden");
+    }
   });
 
   const markerControl = L.Control.extend({

@@ -17,6 +17,14 @@ export const posts: IPost[] = [
     thumbnail: "/images/thumbnails/green-coding.jpg",
   },
   {
+    title: "Kansai Explorer Official Page",
+    slug: "kansaiexplorer",
+    author: "Mario Sandoval",
+    date: "2025-11-05",
+    category: "Tourism",
+    thumbnail: "/images/thumbnails/kansaiexplorer.png",
+  },
+  {
     title: "Blockchain Beyond Cryptocurrency: Real-World Applications",
     slug: "blockchain-beyond-cryptocurrency-real-world-applications",
     author: "Robert Liu",

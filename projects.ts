@@ -8,7 +8,6 @@ export interface IPost {
   }
   
   export const projects: IPost[] = [
-
     {
       title: "Chalinked",
       slug: "chalinked",
@@ -18,12 +17,12 @@ export interface IPost {
       thumbnail: "/images/thumbnails/chalinked.png",
     },
     {
-      title: "Optimizing Next.js Applications for Maximum Performance",
-      slug: "optimizing-nextjs-applications-for-maximum-performance",
-      author: "David Kim",
-      date: "2024-04-05",
-      category: "Performance",
-      thumbnail: "/images/thumbnails/nextjs-optimizing.jpg",
+      title: "Kansai Explorer Official Page",
+      slug: "kansaiexplorer",
+      author: "Mario Sandoval",
+      date: "2025-11-05",
+      category: "Tourism",
+      thumbnail: "/images/thumbnails/kansaiexplorer.png",
     },
     {
       title: "Why TypeScript Will Transform Your JavaScript Development",

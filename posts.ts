@@ -104,4 +104,12 @@ export const posts: IPost[] = [
     category: "TypeScript",
     thumbnail: "/images/thumbnails/typescript.jpg",
   },
+  {
+    title: "How to take Smart Notes - Yocker64",
+    slug: "how-to-take-smart-notes",
+    author: "Sönke Ahrens",
+    date: "2026-02-18",
+    category: "Productivity, Learning",
+    thumbnail: "/images/thumbnails/how-to-take-smart-notes.jpg",
+  },
 ];

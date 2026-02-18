@@ -9,12 +9,12 @@ export interface IPost {
   
   export const books: IPost[] = [
     {
-      title: "Abc Efg",
-      slug: "abc-efg",
-      author: "Robert Liu",
-      date: "2024-02-28",
-      category: "Blockchain",
-      thumbnail: "/images/thumbnails/green-coding.jpg",
+      title: "How to take Smart Notes - Yocker64",
+      slug: "how-to-take-smart-notes",
+      author: "Sönke Ahrens",
+      date: "2026-02-18",
+      category: "Productivity, Learning",
+      thumbnail: "/images/thumbnails/how-to-take-smart-notes.jpg",
     },
     {
       title: "Blockchain Beyond Cryptocurrency: Real-World Applications",

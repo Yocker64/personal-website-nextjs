@@ -4,7 +4,7 @@ import Footer from "@/components/Footer"
 import Link from "next/link";
 import SocialLinks from "@/components/SocialLinks";
 import InfiniteCarousel from "@/components/InfiniteCarousel";
-import { posts} from "@/posts";
+import { blog} from "@/blog";
 import { books} from "@/books";
 import ContentGrid from "@/components/ContentGrid";
 import { projects } from "@/projects";
@@ -75,8 +75,8 @@ export default function Home() {
               <SectionTitle text="Projects I've worked on..."/>
               <ContentGrid items={projects} basePath="projects" />
             </section>
-      <InfiniteCarousel items={posts} basePath="blog " title="My thoughts about..."/>
-      <InfiniteCarousel items={books} basePath="books " title="Books I've read..."/>
+      <InfiniteCarousel items={blog} basePath="blog" title="My thoughts about..."/>
+      <InfiniteCarousel items={books} basePath="books" title="Books I've read..."/>
       <Footer/>
     </div>
   );

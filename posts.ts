@@ -16,7 +16,6 @@ export const posts: IPost[] = [
     category: "Tourism",
     thumbnail: "/images/thumbnails/kansaiexplorer.png",
   },
-  
   {
     title: "How to take Smart Notes - Yocker64",
     slug: "how-to-take-smart-notes",

@@ -6,42 +6,65 @@ import MdxLayout from "@/components/mdx-layout";
 ### A modern web app for a tourism company based in Kansai, Japan.
 
 <div className="flex gap-4 mt-4 mb-8">
-  <a href="https://kansaiiexplorer.com" target="_blank" className="bg-blue-600 text-white px-4 py-2 rounded-md font-semibold hover:bg-blue-700 no-underline">
-    🚀 Live Demo
+  <a href="https://kansaiiexplorer.com" target="_blank" className="bg-blue-600 text-white px-4 py-2 rounded-md font-semibold hover:bg-blue-700 no-underline transition-colors">
+    Live Demo
   </a>
-  <a href="[https://github.com/yocker64/repo](https://github.com/yocker64/repo)" target="_blank" className="bg-gray-800 text-white px-4 py-2 rounded-md font-semibold hover:bg-gray-900 no-underline">
-    📂 GitHub Repo
+  <a href="https://github.com/Yocker64/tourism-page" target="_blank" className="bg-gray-800 text-white px-4 py-2 rounded-md font-semibold hover:bg-gray-900 no-underline transition-colors">
+    GitHub Repo
   </a>
-</div>
-
-{/* 1. HERO IMAGE */}
-<div className="rounded-xl overflow-hidden shadow-xl mb-12 border border-gray-200 dark:border-gray-700">
-  <img 
-    src="/images/projects/kansai-hero.jpg" 
-    alt="Kansai Explorer Landing Page" 
-    className="w-full h-auto object-cover"
-  />
 </div>
 
 ## 🛠️ Tech Stack
 
 <div className="flex flex-wrap gap-2 mb-8">
-  <span className="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm font-medium">Next.js 14</span>
-  <span className="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm font-medium">TypeScript</span>
-  <span className="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm font-medium">Tailwind CSS</span>
-  <span className="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm font-medium">Framer Motion</span>
-  <span className="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm font-medium">Supabase</span>
+  <span className="px-3 py-1 bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-full text-sm font-medium">JavaScript</span>
+  <span className="px-3 py-1 bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-full text-sm font-medium">Webpack Bundler</span>
+  <span className="px-3 py-1 bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-full text-sm font-medium">HTML/Tailwind CSS</span>
+  <span className="px-3 py-1 bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-full text-sm font-medium">Github</span>
+  <span className="px-3 py-1 bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-full text-sm font-medium">Hostinger</span>
 </div>
 
 ## 📍 Project Overview
 
 This is the main page that displays all the information about the tours the company provides in the area of Kansai, Japan. The goal was to create an immersive experience that feels as serene and exciting as visiting Kyoto or Osaka.
 
-**Key features include:**
-- 🗺️ Interactive Map of Kansai
-- 📅 Real-time Booking System
-- 📱 Fully Responsive Mobile Design
-- 🌙 Dark Mode support
+{/* FEATURE HIGHLIGHT: RESERVATION SYSTEM */}
+<div className="my-8 rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900">
+  <div className="group relative">
+    <img 
+      src="/images/projects/kansaiexplorer/aboutus.png" 
+      alt="Kansai Explorer About Us" 
+      className="w-full h-auto object-cover border-b border-gray-200 dark:border-gray-700" 
+    />
+    
+    <div className="p-6">
+      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
+        Core Platform Features
+      </h3>
+      
+      <ul className="flex flex-wrap gap-4 list-none p-0">
+        {[
+          { text: "Easy & Simple Booking System", color: "green" },
+          { text: "Fully Responsive Mobile Design", color: "blue" },
+          { text: "Full Catalogue with Discounts and Offers", color: "yellow" },
+          { text: "Cart Feature", color: "purple" },
+          { text: "Focus on Ease of Use Design", color: "slate" }, // Changed 'white' to 'slate' for visual contrast
+          { text: "Reservation Notifications Direct to Email", color: "red" }
+        ].map((item, index) => (
+          <li 
+            key={index} 
+            className="flex flex-1 min-w-[280px] items-center gap-3 text-sm text-gray-700 dark:text-gray-300 p-4 rounded-lg border border-gray-100 dark:border-gray-800 bg-gray-50/50 dark:bg-gray-800/30"
+          >
+            <span className={`flex-shrink-0 w-6 h-6 flex items-center justify-center rounded-full bg-${item.color}-100 text-${item.color}-600 dark:bg-${item.color}-900/40 dark:text-${item.color}-400 font-bold`}>
+              ✓
+            </span>
+            <span className="leading-tight font-medium">{item.text}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -50,50 +73,86 @@ This is the main page that displays all the information about the tours the comp
 ### 1. The Tour Catalog
 Users can filter tours by prefecture (Osaka, Kyoto, Nara, Hyogo). I implemented a custom hook to handle the filtering logic without causing re-renders.
 
-{/* 2. SIDE BY SIDE IMAGES GRID */}
-<div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-  <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700">
-    <img src="/images/projects/tour-card-light.png" alt="Tour Card Light Mode" className="w-full" />
-    <p className="p-2 text-center text-sm text-gray-500 bg-gray-50 dark:bg-gray-800 m-0">Light Mode</p>
+<section className="space-y-12 my-12">
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    <div className="group relative rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md transition-shadow">
+      <img src="/images/projects/kansaiexplorer/gridtours.png" alt="Tour Listings" className="w-full h-64 object-cover" />
+      <div className="p-4 bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800">
+        <span className="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">Navigation</span>
+        <p className="text-sm font-semibold mt-1">Tour Discovery Grid</p>
+      </div>
+    </div>
+    
+    <div className="group relative rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md transition-shadow">
+      <img src="/images/projects/kansaiexplorer/favorites.png" alt="Favorites Feature" className="w-full h-64 object-cover" />
+      <div className="p-4 bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800">
+        <span className="text-xs font-bold uppercase tracking-wider text-red-600 dark:text-red-400">User Features</span>
+        <p className="text-sm font-semibold mt-1">Saved Favorites</p>
+      </div>
+    </div>
   </div>
-  <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700">
-    <img src="/images/projects/tour-card-dark.png" alt="Tour Card Dark Mode" className="w-full" />
-    <p className="p-2 text-center text-sm text-gray-500 bg-gray-50 dark:bg-gray-800 m-0">Dark Mode</p>
+
+  {/* 4. TRIP HIGHLIGHTS - Kyoto Special Focus */}
+  <div className="bg-slate-50 dark:bg-slate-900/50 p-8 rounded-2xl border border-slate-200 dark:border-slate-800">
+    <h3 className="text-2xl font-bold mb-6 text-slate-900 dark:text-slate-100">Kyoto Destination Deep-Dive</h3>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="space-y-6">
+        <img src="/images/projects/kansaiexplorer/kyototours.png" alt="Kyoto Specific Tours" className="rounded-xl shadow-md border border-gray-200 dark:border-gray-700 transition-transform hover:scale-[1.02]" />
+        <img src="/images/projects/kansaiexplorer/kyotoallday1.png" alt="Kyoto Itinerary Part 1" className="rounded-xl shadow-md border border-gray-200 dark:border-gray-700 transition-transform hover:scale-[1.02]" />
+      </div>
+      <div className="flex flex-col h-full">
+        <img src="/images/projects/kansaiexplorer/kyotoallday2.png" alt="Kyoto Itinerary Part 2" className="rounded-xl shadow-md border border-gray-200 dark:border-gray-700 h-full object-cover transition-transform hover:scale-[1.01]" />
+        <p className="mt-4 text-sm text-center text-slate-500 dark:text-slate-400 italic font-medium">Detailed itinerary views for full-day cultural tours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* 5. FUTURE ROADMAP - UPCOMING UPDATES */}
+<div className="mt-20 p-10 rounded-3xl bg-white dark:bg-gray-950 border-2 border-blue-50 dark:border-blue-900/20 shadow-xl relative overflow-hidden">
+  <div className="absolute top-0 right-0 p-4 opacity-10">
+    <span className="text-8xl">⛩️</span>
+  </div>
+  
+  <div className="max-w-3xl relative z-10">
+    <h3 className="text-3xl font-extrabold text-gray-900 dark:text-white mb-3">Future Roadmap</h3>
+    <p className="text-lg text-gray-600 dark:text-gray-400 mb-10 leading-relaxed">
+      The Kansai Explorer is constantly evolving. Here are the core features currently in development to enhance the travel planning experience.
+    </p>
+
+    <div className="space-y-6">
+      {[
+        { 
+          emoji: "🌓", 
+          title: "Native Dark Mode Support", 
+          desc: "Implementing a system-aware dark theme for comfortable late-night planning.",
+          color: "blue" 
+        },
+        { 
+          emoji: "🗾", 
+          title: "Interactive Japan Map", 
+          desc: "A dynamic map showcasing top attractions and hidden gems with real-time data.",
+          color: "red" 
+        },
+        { 
+          emoji: "📅", 
+          title: "Map-Based Itinerary Planner", 
+          desc: "Select points on the map to automatically build and book your entire schedule.",
+          color: "green" 
+        }
+      ].map((feature, i) => (
+        <div key={i} className="flex items-center gap-5 p-5 rounded-2xl bg-gray-50/80 dark:bg-gray-900/80 border border-gray-100 dark:border-gray-800 transition-all hover:border-blue-200 dark:hover:border-blue-800">
+          <div className={`flex-shrink-0 w-14 h-14 flex items-center justify-center rounded-xl bg-${feature.color}-100 dark:bg-${feature.color}-900/30 text-2xl shadow-inner`}>
+            {feature.emoji}
+          </div>
+          <div>
+            <h4 className="text-lg font-bold text-gray-900 dark:text-white leading-tight">{feature.title}</h4>
+            <p className="text-sm text-gray-600 dark:text-gray-400 mt-1.5 leading-snug">{feature.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
   </div>
 </div>
 
-### 2. Interactive Booking Flow
-The booking flow guides the user through date selection, guest count, and payment.
-
-{/* 3. VIDEO DEMO */}
-<div className="my-8 rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700">
-  <video 
-    autoPlay 
-    loop 
-    muted 
-    playsInline 
-    className="w-full"
-    poster="/images/projects/video-poster.jpg"
-  >
-    <source src="/videos/booking-flow.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-</div>
-
-## 💻 Code Highlight
-
-One interesting challenge was handling the **Multilingual Support (i18n)**. Here is how I structured the locale switching context:
-
-```tsx
-// Example of clean code presentation
-export const LocaleContext = createContext<LocaleContextType | null>(null);
-
-export const useLocale = () => {
-  const context = useContext(LocaleContext);
-  if (!context) {
-    throw new Error('useLocale must be used within a LocaleProvider');
-  }
-  return context;
-};
-```
 </MdxLayout>

@@ -4,7 +4,8 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
 const work_Sans = Work_Sans({
-  subsets:["latin"]
+  subsets:["latin"],
+  variable: "--font-work-sans",
 })
 
 export const metadata: Metadata = {
@@ -19,8 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-      
+    <body
+    
         className={`${work_Sans.className} 
   min-h-screen mx-auto
   bg-white text-black 

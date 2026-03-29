@@ -59,7 +59,7 @@ const Footer = () => {
                         Open Source enthusiast and Data Scientist bridging the gap between complex data and user-friendly web experiences.
                     </p>
                     <p>
-                        Currently based in Kyoto, Japan. Exploring technology, culture, and the perfect cup of coffee.
+                        Currently based in Osaka, Japan. Exploring technology, culture, and the perfect cup of coffee.
                     </p>
                 </div>
             </div>

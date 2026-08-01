@@ -114,7 +114,7 @@ const Footer = () => {
                         </a>
                     </li>
                     <li className="text-gray-500 dark:text-gray-500 text-xs mt-2">
-                        Available for freelance opportunities and tech consultations.
+                        Available for freelance opportunities and tech consultations...
                     </li>
                 </ul>
             </div>
